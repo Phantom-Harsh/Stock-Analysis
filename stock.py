@@ -4,7 +4,6 @@ import streamlit as st
 st.write("""
 # STOCK PRICING APPLICATION
 
-Showing are the stock **closing price** and ***volume*** !
 """)
 
 name = st.text_input('Enter your Stocks TickerSymbol: ', '')
@@ -17,6 +16,8 @@ tickerData = yf.Ticker(tickerSymbol)
 tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2020-5-31')
 
 st.write("""
+Showing are the stock **closing price** and ***volume*** 
+
          
 ## Closing Price
 
